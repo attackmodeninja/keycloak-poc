@@ -1,0 +1,15 @@
+
+This is a wordpress with keycloak env running on docker.
+
+1. clone repo and cd into it
+2. run ./run.sh from the command line - 2 containers will build and run and output the urls once complete.
+
+3. Set up wordpress with any detail and note.
+4. activate JWT Authentication for WP-API, JWT Authenticator, or OAuth Client as required.
+5. log into keycloak1 & 2 (use incognito for 2nd keycloak) master realm http://localhost:8080/auth ;
+
+username: admin
+password: admin
+
+6. Import demo-realm-export.json using the import tool within keycloak gui for keycloak1
+7. Configure keycloak2 as federated server between keycloak1
